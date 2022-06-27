@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech2U</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
@@ -13,26 +13,26 @@
 <body>
     <!-- Header -->
     <div class="landing-banner">
-        <span class="nav-banner">
-            <img src="/image/home/image 3.svg" alt="">
-            <span class="navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="/tech-page/tech.html">Technology</a>
-                <a href="/stories-page/stories.html">Stories</a>
-                <a href="contact.html">Contact Us</a>
-                <button>Join Tech2U</button>
-            </span>
-        </span>
-        <span>
-            <div>
-                <h2>Catch phrase or slogan that draws attention to Tech2U values</h2>
-                <p>Sit quam metus, fringilla in fermentum. Nulla elit, est fringilla nibh fringilla tellus et quis. Duis
-                    turpis quam risus in amet.</p>
-                <button>Register for Tech2U</button>
+        <div class="nav-banner">
+            <img class="logo" src="/image/home/image 3.svg" alt="">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../tech-page/tech.html">Technology</a></li>
+                    <li><a href="../stories-page/stories.html">Stories</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href=""><button>Get Tech Support</button></a>
+        </div>
+        <div class="nav-info-about">
+            <div class="box-tech">
+                <h2>Tech2U Instructor Stories</h2>
+                <p>Tech2U is already supporting many instructors to reach their goals and maximize technology in their classroom. Read some
+                of the stories of Instructors who have received technical support through Tech2U.</p>
             </div>
-            <img src="/image/home/image 3.svg" alt="">
-        </span>
+        </div>
     </div>
 
     <!-- Page Body -->
@@ -40,24 +40,27 @@
         <div class="stories-row">
             <div class="stories-box">
                 <img src="/image/stories/Ellipse 1.svg" alt="">
-                <p>Details: Sodales tristi que ut ornare scelerisque. Arcu sagittis, fermentum viverra malesuada non ornare amet,
-                    volutpat? Sodales tristi que ut ornare scelerisque.</p>
-                <a href="" class="stories-link">Read more ></a>
-                <div class="faculty">
-                    Problem Solved
-                    <br>
-                    Faculty of Information
+                <div class="story-content">
+                    <div class="content">
+                        <p>Details: Sodales tristi que ut ornare scelerisque. Arcu sagittis, fermentum viverra malesuada non ornare amet, volutpat? Sodales tristi que ut ornare scelerisque.</p>
+                        <a href="" class="stories-link">Read more ></a>
+                    </div>
+                    <div class="story-title">
+                        Empowering a First Time Instructor
+                    </div>
                 </div>
             </div>
             <div class="stories-box">
                 <img src="/image/stories/Ellipse 1.svg" alt="">
-                <p>Details: Sodales tristi que ut ornare scelerisque. Arcu sagittis, fermentum viverra malesuada non ornare amet,
-                    volutpat? Sodales tristi que ut ornare scelerisque.</p>
-                <a href="" class="stories-link">Read more ></a>
-                <div class="faculty">
-                    Problem Solved
-                    <br>
-                    Faculty of Information
+                <div class="story-content">
+                    <div class="content">
+                        <p>Details: Sodales tristi que ut ornare scelerisque. Arcu sagittis, fermentum viverra malesuada non ornare
+                            amet, volutpat? Sodales tristi que ut ornare scelerisque.</p>
+                        <a href="" class="stories-link">Read more ></a>
+                    </div>
+                    <div class="story-title">
+                        Empowering a First Time Instructor
+                    </div>
                 </div>
             </div>
         </div>

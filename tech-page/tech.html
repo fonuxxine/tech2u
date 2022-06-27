@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech2U</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
@@ -13,67 +13,83 @@
 <body>
     <!-- Header -->
     <div class="landing-banner">
-        <span class="nav-banner">
-            <img src="/image/home/image 3.svg" alt="">
-            <span class="navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="/tech-page/tech.html">Technology</a>
-                <a href="/stories-page/stories.html">Stories</a>
-                <a href="contact.html">Contact Us</a>
-                <button>Join Tech2U</button>
-            </span>
-        </span>
-        <div>
-            <h2>Overview of Technology</h2>
-            <p>Nulla bibendum lacus elementum, arcu nisl. Elit duis mauris, vitae proin a. Bibendum feugiat nulla ornare morbi. Elit sed posuere ut in eu. Ut cursus quis nam dignissim maecenas sed consectetur. Eget felis neque, et commodo id elementum quis et, velit. Eget iaculis sollicitudin mattis et placerat. Sit tortor, semper ut amet, consectetur pulvinar nibh felis.</p>
+        <div class="nav-banner">
+            <img class="logo" src="/image/home/image 3.svg" alt="">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../tech-page/tech.html">Technology</a></li>
+                    <li><a href="../stories-page/stories.html">Stories</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href=""><button>Get Tech Support</button></a>
+        </div>
+        <div class="nav-info-about">
+            <div class="box-tech">
+                <h2>Overview of Technology</h2>
+                <p>Tech2U offers real-time, personalized tech support in the classroom from a technical support team. Contact us to
+                schedule tech support for your class. We offer:</p>
+            </div>
         </div>
     </div>
 
     <!-- Page Body -->
     <div class="tech-body">
         <div class="tech-row">
-            <span>
-                Technology Delivered
+            <span class="tech-rect">
+                <a href="tech-delivered-landing.html">
+                    <img src="../image/tech/Rectangle 39-3.svg" alt="">
+                    <p>Technology Delivered</p>
+                </a>
             </span>
-            <span>
-                Dual Delivery Support
-            </span>
-        </div>
-        <div class="tech-row">
-            <span>
-                Content Capture
-            </span>
-            <span>
-                Audio & Video Enhancement
+            <span class="tech-rect">
+                <img src="../image/tech/Rectangle 39-3.svg" alt="">
+                <p>Dual Delivery Support</p>
             </span>
         </div>
         <div class="tech-row">
-            <span>
-                Teaching Stations
+            <span class="tech-rect">
+                <img src="../image/tech/Rectangle 39-3.svg" alt="">
+                <p>Content Capture</p>
             </span>
-            <span>
-                Live Stream Events
+            <span class="tech-rect">
+                <img src="../image/tech/Rectangle 39-3.svg" alt="">
+                <p>Audio & Video Enhancement</p>
+            </span>
+        </div>
+        <div class="tech-row">
+            <span class="tech-rect">
+                <img src="../image/tech/Rectangle 39-4.svg" alt="">
+                <p>Teaching Stations</p>
+            </span>
+            <span class="tech-rect">
+                <img src="../image/tech/Rectangle 39-3.svg" alt="">
+                <p>Live Stream Events</p>
+            </span>
+        </div>
+        <div class="tech-row">
+            <span class="tech-rect">
+                <img src="../image/tech/Rectangle 39-3.svg" alt="">
+                <p>Tech2U Studio</p>
             </span>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <span>
-            <img src="/image/home/image 3.svg" alt="">
-            <span>
-                <div class="footer-col">
-                    <h3 class="footer-h3">Home</h3>
-                    <h3 class="footer-h3">About</h3>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-h3">Technology</h3>
-                    <h3 class="footer-h3">Stories</h3>
-                </div>
-                <button>Contact Us</button>
-            </span>
-        </span>
+        <img class="footer-logo" src="/image/home/image 3.svg" alt="">
+        <div class="footer-col">
+            <h3 class="footer-h3">Home</h3>
+            <h3 class="footer-h3">About</h3>
+            <h3 class="footer-h3">Technology</h3>
+        </div>
+        <div class="footer-col">
+            <h3 class="footer-h3">Stories</h3>
+            <h3 class="footer-h3">Contact Us</h3>
+        </div>
+        <button class="footer-cta">Get Tech Support</button>
     </div>
 </body>
 </html>
