@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --web-navy-blue: #1B2E5B;
+    --grey: #545353;
+    --light-grey: #E4E3E3;
+    --dark-grey: #333333;
+    --medium-grey: #636566;
+    --off-white: #FDFCFC;
+    --light-blue: #BFE7F3;
+    --dark-blue: #7FCFE7;
+    --light-yellow: #FFFABF;
+    --dark-yellow: #FFF57F;
+    --light-green: #D6EEEB;
+    --dark-green: #ACDCD6;
+    --light-red: #F8D3C5;
+    --dark-red: #F1A88A;
+    --light-purple: #D7CCDE;
+    --dark-purple: #AF8EBC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.landing-banner{
+    width: 100%;
+    height: 88vh;
+    background: linear-gradient(rgba(27, 46, 91, .8), rgba(27, 46, 91, .9)), url(/image/home/Rectangle\ 12.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 50px 30px 30px;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color: var(--off-white);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: var(--dark-blue);
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+button{
+    padding: 13px 20px;
+    background-color: var(--off-white);
+    border: none;
+    border-radius: 15px;
+    color: var(--web-navy-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta{
+    margin-left: 20px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.nav-info{
+    display: flex;
+    padding: 30px 5vw 30px 10vw;
+}
+
+.nav-p{
+    width: 900px;
+}
+
+.nav-text{
+    color: var(--off-white);
+    padding-top: 50px;
+}
+
+.nav-text h2{
+    margin-bottom: 20px;
+}
+
+.nav-text p{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+/* Footer */
+
+/* Home */
+.about-info{
+    display: flex;
+    background-color: var(--off-white);
+    padding: 100px 100px;
+}
+
+.about-tech2u{
+}
+
+.about-tech2u img{
+    align-items: center;
+}
+
+.about-font{
+    padding: 30px 90px 0px 30px;
+    color: var(--dark-grey);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.about-p{
+    color: var(--web-navy-blue);
+}
+
+.about-p a{
+    align-items: center;
+}
+
+.overview-info{
+    display: flex;
+    background-color: var(--light-grey);
+    padding: 100px 100px;
+}
+
+.stories-info{
+    display: flex;
+    background-color: var(--web-navy-blue);
+    padding: 100px 100px;
+}
+
+.stories-p{
+    color: var(--off-white);
+}
+
+span .stories-link{
+    color: var(--off-white);
+}
+
+.contact-info{
+    text-align: center;
+    padding: 90px 30px 90px 30px;
+}
+
+.contact-p{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    background-color: var(--web-navy-blue);
+    justify-content: flex-end;
+    padding: 30px 50px 30px 50px;
+}
+
+.footer-logo{
+    margin-right: auto;
+}
+
+.footer-col{
+    margin-right: 30px;
+}
+
+.footer-col h3{
+    color: var(--off-white);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer button{
+    height: 40px;
+    padding: 5px 10px;
+}
+
+/* About */
+.landing-banner-about {
+    width: 100%;
+    height: 88vh;
+    background: url(/image/about/image\ 7.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-banner-about{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 50px 30px 30px;
+    background-color: var(--web-navy-blue);
+}
+
+.box-about{
+    background-color: rgba(255, 255, 255, .9);
+    border: none;
+    border-radius: 15px;
+    padding: 40px;
+    margin-right: 290px;
+}
+
+.box-about h2 {
+    margin-bottom: 20px;
+}
+
+.box-about p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.nav-info-about {
+    display: flex;
+    padding: 90px 20vw 30px 10vw;
+}
+
+.services{
+    margin: 70px 0;
+}
+
+.our-service{
+    margin: 0 20vw 70px 20vw;
+}
+
+.our-service h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-service p {
+    margin-bottom: 50px;
+}
+
+.service-icon{
+    margin-bottom: 50px;
+}
+
+.icon-set{
+    display: flex;
+    margin: 0 10vw 0 10vw;
+}
+
+.icon-set img{
+    margin-right: 20px;
+}
+
+.service-text{
+    display: flex;
+    background: var(--light-grey);
+    padding: 20px 30px 5px 30px;
+    border-radius: 15px;
+}
+
+.service-text p{
+    margin-right: 20px;
+}
+
+.service-text img{
+    width: 90px;
+}
+
+.team{
+    background-color: var(--light-grey);
+    width: 100%;
+    padding: 70px 0vw 70px 0vw;
+}
+
+.team h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-set{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-icon-set{
+    background-color: var(--off-white);
+    border-radius: 15px;
+    max-width: 200px;
+    padding: 30px 30px 0px 30px;
+    margin: 20px;
+    align-items: center;
+}
+
+.tech2u-impact{
+    align-items: center;
+    padding: 70px 20vw 0px 20vw;
+}
+
+.tech2u-impact h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tech2u-impact p{
+    padding-bottom: 50px;
+}
+
+.impact-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.impact-set{
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 50%;
+}
+
+.centre{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 30px;
+    background-color: var(--web-navy-blue);
+    color: var(--off-white)
+}
