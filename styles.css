@@ -4,9 +4,11 @@
     --web-navy-blue: #1B2E5B;
     --grey: #545353;
     --light-grey: #E4E3E3;
+    --lighter-grey: #f0f0f0;
     --dark-grey: #333333;
     --medium-grey: #636566;
     --off-white: #FDFCFC;
+    --white: #ffffff;
     --light-blue: #BFE7F3;
     --dark-blue: #7FCFE7;
     --light-yellow: #FFFABF;
@@ -24,13 +26,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    line-height: 29px;
 }
 
 /* Header */
 .landing-banner{
     width: 100%;
     height: 88vh;
-    background: linear-gradient(rgba(27, 46, 91, .8), rgba(27, 46, 91, .9)), url(/image/home/Rectangle\ 12.svg);
+    background: url(/image/home/Rectangle\ 12.svg);
     background-size: cover;
     background-position: center;
 }
@@ -106,16 +109,21 @@ button:hover{
 }
 
 .nav-text{
-    color: var(--off-white);
+    color: var(--web-navy-blue);
     padding-top: 50px;
+    
 }
 
 .nav-text h2{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 .nav-text p{
-    font-size: 15px;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 /* Footer */
@@ -136,17 +144,31 @@ button:hover{
 
 .about-font{
     padding: 30px 90px 0px 30px;
-    color: var(--dark-grey);
-    font-weight: 400;
-    font-size: 1.5rem;
+    color: var(--web-navy-blue);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
 }
 
-.about-p{
+.about-p p{
     color: var(--web-navy-blue);
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .about-p a{
     align-items: center;
+    color: var(--web-navy-blue);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.btn-landing{
+    background-color: var(--web-navy-blue);
+    color: var(--off-white);
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .overview-info{
@@ -162,11 +184,17 @@ button:hover{
 }
 
 .stories-p{
-    color: var(--off-white);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 span .stories-link{
     color: var(--off-white);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .contact-info{
@@ -177,6 +205,9 @@ span .stories-link{
 .contact-p{
     margin: auto;
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .footer{
@@ -218,7 +249,7 @@ span .stories-link{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 50px 30px 30px;
+    padding: 20px 50px 20px 30px;
     background-color: var(--web-navy-blue);
 }
 
@@ -235,13 +266,16 @@ span .stories-link{
 }
 
 .box-about p {
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
     margin-bottom: 30px;
 }
 
 .nav-info-about {
     display: flex;
     padding: 90px 20vw 30px 10vw;
+    margin-top: 200px;
 }
 
 .services{
@@ -398,7 +432,7 @@ span .stories-link{
 }
 
 .tech-rect{
-    margin-right: 100px;
+    margin-right: 50px;
     background-color: transparent;
     border: 3px solid var(--light-grey);
     border-radius: 29px;
