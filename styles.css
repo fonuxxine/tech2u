@@ -841,3 +841,128 @@ span .stories-link{
 .nav-help img{
     display: absolute;
 }
+
+/* Contact */
+.landing-banner-contact {
+    width: 100%;
+    background: none;
+}
+
+.contact-body{
+    padding: 100px 14vw;
+    display: flex;
+}
+
+.contact-text{
+    margin-right: 80px;
+}
+
+.contact-text h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--web-navy-blue);
+    margin-bottom: 30px;
+}
+
+.contact-list{
+    margin-left: 50px;
+}
+
+.contact-list p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--web-navy-blue);
+    margin-bottom: 20px;
+}
+
+.contact-list ul li{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--web-navy-blue);
+}
+
+.contact-list ul{
+    margin-bottom: 20px;
+}
+
+.contact-list button{
+    background-color: var(--web-navy-blue);
+    color: var(--off-white);
+}
+
+.question{
+    background-color: var(--light-grey);
+    padding: 80px 30vw;
+}
+
+.question p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--web-navy-blue);
+}
+
+.question-title{
+    margin-bottom: 30px;
+}
+
+/* .question-contact::after{
+    content: '';
+    font-weight: 600;
+    flex: 1;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: #000;
+} */
+
+.question img{
+    position: absolute;
+    margin-top: 30px;
+    left: 49%;
+}
+
+.contact-form{
+    padding: 70px 20vw;
+}
+
+.contact-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-btn{
+    background-color: var(--web-navy-blue);
+    color: var(--off-white);
+    justify-content: center;
+    align-items: center
+}
+
+.field input{
+    border-radius: 20px;
+    box-shadow: none;
+    border: 1px solid #E4E3E3;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.field p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--web-navy-blue);
+    margin-bottom: 10px;
+}
+
+.first-name{
+    margin-right: 50px;
+}
+
+.message input{
+    height: 100px;
+    margin-bottom: 40px;
+}
