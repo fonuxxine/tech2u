@@ -539,15 +539,6 @@ span .stories-link{
     transform: rotateY(180deg);
 }
 
-.team-icon-set{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--off-white);
-    border-radius: 40px;
-    backface-visibility: hidden;
-}
-
 .back-side{
     position: absolute;
     width: 100%;
@@ -689,7 +680,7 @@ span .stories-link{
     border: none;
     border-radius: 15px;
     padding: 40px;
-    margin-right: 290px;
+    margin-right: 10vw;
 }
 
 .box-tech h2 {
@@ -715,13 +706,20 @@ span .stories-link{
 
 .tech-row{
     display: flex;
-    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.tech-row2 {
+    display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
 
 .tech-rect-main {
-    margin-right: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
     background-color: var(--web-navy-blue);
     border: none;
     border-radius: 29px;
@@ -731,7 +729,8 @@ span .stories-link{
 }
 
 .tech-rect{
-    margin-right: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
     background-color: transparent;
     border: 3px solid var(--light-grey);
     border-radius: 29px;
@@ -743,8 +742,23 @@ span .stories-link{
     width: 300px;
 }
 
+.tech-row2 img {
+    width: 300px;
+}
+
 .tech-row p{
     text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 30px;
+}
+
+.tech-row2 p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
     margin-top: 30px;
 }
 
@@ -775,10 +789,24 @@ span .stories-link{
 
 .mobile-set{
     background-color: transparent;
-    padding: 30px;
+    padding: 20px;
     margin: 20px;
+    width: 350px;
     align-items: center;
     text-align: center;
+}
+
+.mobile-set img {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.mobile-set p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--web-navy-blue);
 }
 
 .vid{
@@ -804,6 +832,11 @@ span .stories-link{
 
 .feature ul{
     color: var(--off-white);
+    margin-left: 40px;
+}
+
+.feature ul li ul{
+    margin-left: 20px;
 }
 
 .mobile-landing {
@@ -1093,13 +1126,14 @@ span .stories-link{
     -webkit-perspective: 1200;
     -moz-perspective: 1200;
     perspective: 1200;
-    margin: 20px;
+    height: 320px;
+    width: 300px;
+    margin: 40px;
 }
 
-.card-vertical,
-.card-horizontal {
-    height: 320px;
-    width: 250px;
+.card-vertical{
+    height: 100%;
+    width: 100%;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -1136,7 +1170,7 @@ span .stories-link{
 }
 
 .card-back-content p{
-    padding: 20px;
+    padding: 25px;
     text-align: left;
     font-weight: 400;
     font-size: 20px;
