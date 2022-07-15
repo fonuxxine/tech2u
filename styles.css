@@ -248,14 +248,27 @@ span .stories-link{
 }
 
 .contact-info{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 60px 30px 60px 30px;
 }
 
 .contact-p{
-    margin: auto;
     margin-bottom: 20px;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--web-navy-blue);
+}
+
+.contact-info a{
+    color: var(--web-navy-blue);
+}
+
+.contact-link{
+    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
 }
@@ -290,7 +303,7 @@ span .stories-link{
 .landing-banner-about {
     width: 100%;
     height: 88vh;
-    background: url(/image/about/image\ 7.svg);
+    background: url(/image/about/image\ 7-2.svg);
     background-size: cover;
     background-position: center;
 }
@@ -312,6 +325,7 @@ span .stories-link{
 
 .nav-text-about p {
     color: var(--web-navy-blue);
+    margin-top: 30px;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -388,7 +402,7 @@ span .stories-link{
 
 .icon-set{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
     margin: 0 3vw 40px 3vw;
     justify-content: center;
@@ -407,7 +421,8 @@ span .stories-link{
     align-items: flex-start;
     background: var(--light-grey);
     padding: 30px 30px 0px 30px;
-    border-radius: 15px;
+    margin-bottom: 90px;
+    border-radius: 40px;
 }
 
 .service-text p{
@@ -449,25 +464,102 @@ span .stories-link{
     margin-top: 20px;
 }
 
+.maincontainer {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
 .team-set{
     display: flex;
     margin: auto;
     justify-content: center;
 }
 
+.card-container{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
 .team-icon-set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: var(--off-white);
-    border-radius: 15px;
-    max-width: 200px;
-    padding: 30px;
-    margin: 20px;
-    align-items: center;
-    text-align: center;
+    border-radius: 40px;
+    backface-visibility: hidden;
+}
+
+.back-side{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--off-white);
+    border-radius: 40px;
+    transform: rotateY(180deg);
 }
 
 .tech2u-impact{
     align-items: center;
-    padding: 70px 20vw 0px 20vw;
+    padding: 70px 10vw 0px 10vw;
 }
 
 .tech2u-impact h2{
@@ -494,6 +586,8 @@ span .stories-link{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .impact-set{
@@ -501,6 +595,8 @@ span .stories-link{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .impact-img{
@@ -510,8 +606,8 @@ span .stories-link{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 30px;
 }
 
@@ -525,9 +621,20 @@ span .stories-link{
     color: var(--off-white);
 }
 
+.btn-tech {
+    margin-top: 30px;
+    background-color: var(--web-navy-blue);
+    color: var(--off-white);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .access-row{
     display: flex;
+    align-items: flex-end;
     margin-bottom: 40px;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .access-row ul{
@@ -535,7 +642,11 @@ span .stories-link{
     font-size: 24px;
     line-height: 29px;
     color: var(--web-navy-blue);
-    margin-right: 70px;
+    margin-right: 90px;
+}
+
+.access-row ul li{
+    margin-top: 40px;
 }
 
 .centre-btn{
@@ -972,3 +1083,82 @@ span .stories-link{
     height: 100px;
     margin-bottom: 40px;
 }
+
+
+
+
+/* ------------ Flip card ------------- */
+
+.card-container {
+    -webkit-perspective: 1200;
+    -moz-perspective: 1200;
+    perspective: 1200;
+    margin: 20px;
+}
+
+.card-vertical,
+.card-horizontal {
+    height: 320px;
+    width: 250px;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    transition: all .4s ease;
+}
+
+.card-front,
+.card-back {
+    color: #fafafa;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    position: absolute;
+    background: #FFFFFF;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card-back {
+    -moz-transform: rotateY(179.9deg);
+    -webkit-transform: rotateY(179.9deg);
+    transform: rotateY(179.9deg);
+}
+
+.card-front-content {
+    padding: 2em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card-back-content p{
+    padding: 20px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card-back-hr {
+    -webkit-transform: rotateX(179.9deg);
+    -moz-transform: rotateX(179.9deg);
+    transform: rotateX(179.9deg);
+}
+
+.card-vertical:hover {
+    -webkit-transform: rotateY(179.9deg);
+    -moz-transform: rotateY(179.9deg);
+    transform: rotateY(179.9deg);
+}
+
+.card-horizontal:hover {
+    -webkit-transform: rotateX(179.9deg);
+    -moz-transform: rotateX(179.9deg);
+    transform: rotateX(179.9deg);
+}
+
+/* --------------------------------------- */
