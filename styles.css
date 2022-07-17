@@ -28,6 +28,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     line-height: 29px;
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -114,7 +115,6 @@ button:hover{
 .nav-text{
     color: var(--web-navy-blue);
     padding-top: 50px;
-    
 }
 
 .nav-text h2{
@@ -308,6 +308,14 @@ span .stories-link{
     background-position: center;
 }
 
+.landing-banner-subtech {
+    width: 100%;
+    height: 88vh;
+    background: url(/image/tech/Rectangle\ 12-3.svg);
+    background-size: cover;
+    background-position: center;
+}
+
 .nav-banner-about{
     display: flex;
     justify-content: flex-end;
@@ -351,6 +359,7 @@ span .stories-link{
 
 .box-about h2 {
     margin-bottom: 20px;
+    color: var(--web-navy-blue);
 }
 
 .box-about p {
@@ -358,6 +367,7 @@ span .stories-link{
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 30px;
+    color: var(--web-navy-blue);
 }
 
 .nav-info-about {
@@ -855,6 +865,8 @@ span .stories-link{
 .stories-row{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-content: stretch;
+    align-items: stretch;
 }
 
 .stories-box{
@@ -889,6 +901,21 @@ span .stories-link{
 }
 
 .content{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 0 0;
+    border: 3px solid var(--light-grey);
+    border-bottom: none;
+    padding: 70px 90px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--web-navy-blue);
+    min-height: 350px;
+}
+
+.content-top {
     border-radius: 15px 15px 0 0;
     border: 3px solid var(--light-grey);
     border-bottom: none;
@@ -901,6 +928,9 @@ span .stories-link{
 }
 
 .story-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0 0 15px 15px;
     border: 3px solid var(--web-navy-blue);
     padding: 20px;
@@ -910,6 +940,18 @@ span .stories-link{
     font-size: 24px;
     line-height: 29px;
     text-align: center;
+    height: 100px;
+}
+
+.stories-link-read{
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    bottom: 130px;
+    right: 0;
+    left: 0
 }
 
 .find-help-info {
@@ -974,22 +1016,23 @@ span .stories-link{
 }
 
 .box-help {
-    position: relative;
-    background-color: rgba(255, 255, 255, .9);
-    border: none;
-    border-radius: 20px;
-    padding: 100px;
-    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border-bottom: none;
+    padding: 70px 90px;
+    background: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--web-navy-blue);
 }
 
 .nav-help{
     display: flex;
-    align-items: flex-start;
+    margin: 70px;
 }
 
-.nav-help img{
-    display: absolute;
-}
 
 /* Contact */
 .landing-banner-contact {
@@ -1116,8 +1159,6 @@ span .stories-link{
     height: 100px;
     margin-bottom: 40px;
 }
-
-
 
 
 /* ------------ Flip card ------------- */
