@@ -109,7 +109,7 @@ button:hover{
 
 .nav-p{
     width: 1500px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .nav-text{
@@ -133,7 +133,6 @@ button:hover{
 .nav-banner-about button{
     font-size: 1.2rem;
 }
-/* Footer */
 
 /* Home */
 .about-info{
@@ -272,6 +271,8 @@ span .stories-link{
     font-size: 20px;
     line-height: 24px;
 }
+
+/* Footer */
 
 .footer{
     display: flex;
@@ -748,6 +749,13 @@ span .stories-link{
     margin-bottom: 50px;
 }
 
+.tech-rect a p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--web-navy-blue);
+}
+
 .tech-row img{
     width: 300px;
 }
@@ -1210,7 +1218,17 @@ span .stories-link{
     text-align: center;
 }
 
+.card-back-content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .card-back-content p{
+    display: flex;
+    align-items: flex-end;
     padding: 25px;
     text-align: left;
     font-weight: 400;
@@ -1236,4 +1254,49 @@ span .stories-link{
     transform: rotateX(179.9deg);
 }
 
-/* --------------------------------------- */
+/* ------------Teaching Station-------------- */
+.teach-sta-body{
+    margin: 70px;
+}
+
+.teach-sta-body h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--web-navy-blue);
+    margin-bottom: 40px;
+}
+
+.sta-set{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.sta-set img{
+    margin-right: 30px;
+    height: 442px;
+}
+
+.sta-set ul{
+    margin-left: 30px;
+}
+
+.sta-set ul li{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--web-navy-blue);
+}
+
+.vid-row{
+    display: flex;
+    justify-content: center;
+}
+
+.vid-row video{
+    width: 531px;
+    height: 304px;
+    margin: 20px;
+}
