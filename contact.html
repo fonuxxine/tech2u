@@ -58,8 +58,34 @@
             <img id="arrow" src="/image/contact/Vector-2.svg" alt="">
         </a>
     </div>
-    <div id="tap">
-        
+    <div id="tap" data-aos="fade-up" id="form">
+        <form class="contact-form" action="">
+            <div class="contact-name">
+                <div class="field first-name">
+                    <p>First Name</p>
+                    <input type="text">
+                </div>
+                <div class="field">
+                    <p>Last Name</p>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="field">
+                <p>Email Address</p>
+                <input type="text">
+            </div>
+            <div class="field">
+                <p>Phone Number</p>
+                <input type="text">
+            </div>
+            <div class="field message">
+                <p>Message</p>
+                <textarea id="subject" name="subject"></textarea>
+            </div>
+            <div class="centre-btn">
+                <button class="contact-btn">Send Message</button>
+            </div>
+        </form>
     </div>
 
     <!-- Footer -->
@@ -81,39 +107,15 @@
         var arrow = document.getElementById('arrow');
         var blankForm = document.getElementById('tap');
         arrow.addEventListener('click', e => {
-                showForm();
+            if (blankForm.style.display === 'none') {
+                blankForm.style.display = 'block';
+                arrow.src = '/image/contact/Vector-3.svg';
+            } else {
+                blankForm.style.display = 'none';
+                arrow.src = '/image/contact/Vector-2.svg';
+            }
             })
-        function showForm() {
-            blankForm.innerHTML =
-                `<div data-aos="fade-up" id="form"> 
-                    <form class="contact-form" action="">
-                    <div class="contact-name">
-                        <div class="field first-name">
-                            <p>First Name</p>
-                            <input type="text">
-                        </div>
-                        <div class="field">
-                            <p>Last Name</p>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <p>Email Address</p>
-                        <input type="text">
-                    </div>
-                    <div class="field">
-                        <p>Phone Number</p>
-                        <input type="text">
-                    </div>
-                    <div class="field message">
-                        <p>Message</p>
-                        <input type="text">
-                    </div>
-                    <div class="centre-btn">
-                        <button class="contact-btn">Send Message</button>
-                    </div>
-                </form> </div>`
-        }
+        
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

@@ -105,11 +105,14 @@ button:hover{
     display: flex;
     align-items: flex-start;
     padding: 30px 0vw 30px 5vw;
+    position: relative;
 }
 
 .nav-p{
-    width: 1500px;
-    margin-top: 150px;
+    width: 700px;
+    position: absolute;
+    bottom: -30px;
+    right: 5vw;
 }
 
 .nav-text{
@@ -202,20 +205,24 @@ button:hover{
 
 .stories-info span{
     display: grid;
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 .stories-info img{
-    margin-left: 7vw;
+    margin-right: auto;
+    margin-left: 50px;
 }
 
-.stories-p{
+.stories-p {
     color: var(--white);
     font-weight: 500;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 44px;
+    max-width: 35vw;
 }
 
-.stories-p::before{
+.stories-p::before {
     font-family: FontAwesome;
     content: '\f10d';
     display: flex;
@@ -298,12 +305,12 @@ span .stories-link{
 .footer button{
     height: 50px;
     padding: 5px 10px;
+    border-radius: 20px;
 }
 
 /* About */
 .landing-banner-about {
     width: 100%;
-    height: 88vh;
     background: url(/image/about/image\ 7-2.svg);
     background-size: cover;
     background-position: center;
@@ -345,8 +352,8 @@ span .stories-link{
     border: none;
     border-radius: 15px;
     padding: 40px;
-    margin-right: 0px;
-    margin-bottom: 50px;
+    margin: 60px auto;
+    max-width: 45vw;
 }
 
 .box-about2 {
@@ -373,7 +380,8 @@ span .stories-link{
 
 .nav-info-about {
     display: flex;
-    padding: 90px 20vw 30px 10vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-info {
@@ -627,8 +635,7 @@ span .stories-link{
     margin-top: 30px;
     background-color: var(--web-navy-blue);
     color: var(--off-white);
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 60px;
 }
 
 .access-row{
@@ -659,7 +666,6 @@ span .stories-link{
 /* Technology */
 .landing-banner-tech {
     width: 100%;
-    height: 88vh;
     background: url(/image/tech/Group\ 305.svg);
     background-size: cover;
     background-position: center;
@@ -691,7 +697,8 @@ span .stories-link{
     border: none;
     border-radius: 15px;
     padding: 40px;
-    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-right: 20vw;
 }
 
 .box-tech h2 {
@@ -747,6 +754,10 @@ span .stories-link{
     border-radius: 29px;
     padding-bottom: 30px;
     margin-bottom: 50px;
+}
+
+.tech-rect a{
+    text-decoration: none;
 }
 
 .tech-rect a p{
@@ -879,7 +890,7 @@ span .stories-link{
 
 .stories-box{
     margin-left: 150px;
-    margin-right: 100px;
+    margin-right: 150px;
     position: relative;
 }
 
@@ -1126,6 +1137,11 @@ span .stories-link{
     left: 49%;
 }
 
+.form {
+    display: inline;
+    float: left;
+}
+
 .contact-form{
     padding: 70px 20vw;
 }
@@ -1139,7 +1155,8 @@ span .stories-link{
     background-color: var(--web-navy-blue);
     color: var(--off-white);
     justify-content: center;
-    align-items: center
+    align-items: center;
+    padding: 10px 40px;
 }
 
 .field input{
@@ -1149,6 +1166,17 @@ span .stories-link{
     border-radius: 10px;
     width: 100%;
     margin-bottom: 20px;
+    padding: 10px;
+}
+
+.field textarea {
+    border-radius: 20px;
+    box-shadow: none;
+    border: 1px solid #E4E3E3;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .field p{
@@ -1163,9 +1191,13 @@ span .stories-link{
     margin-right: 50px;
 }
 
-.message input{
+.message textarea{
     height: 100px;
     margin-bottom: 40px;
+}
+
+#tap {
+    display: none;
 }
 
 
