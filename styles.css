@@ -35,7 +35,7 @@
 .landing-banner{
     width: 100%;
     height: 88vh;
-    background: url(/image/home/Rectangle\ 12.svg);
+    background: url(/image/home/Rectangle\ 12-3.svg);
     background-size: cover;
     background-position: center;
 }
@@ -111,8 +111,19 @@ button:hover{
 .nav-p{
     width: 700px;
     position: absolute;
-    bottom: -30px;
     right: 5vw;
+}
+
+.nav-p-abt {
+    width: 300px;
+    position: absolute;
+    right: 20vw;
+}
+
+.nav-p-tech {
+    width: 220px;
+    position: absolute;
+    right: 25vw;
 }
 
 .nav-text{
@@ -136,6 +147,38 @@ button:hover{
 .nav-banner-about button{
     font-size: 1.2rem;
 }
+
+.nav-cont-cap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-cont-cap .nav-cont-text {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: left;
+}
+
+.nav-cont-text h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 20px;
+    color: var(--off-white);
+}
+
+.nav-cont-text p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--off-white);
+}
+
+.nav-cont-cap{
+    margin-right: 10vw;
+}
+
 
 /* Home */
 .about-info{
@@ -169,7 +212,8 @@ button:hover{
 .about-p p{
     color: var(--web-navy-blue);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 22px;
     margin-bottom: 30px;
 }
 
@@ -214,21 +258,29 @@ button:hover{
     margin-left: 50px;
 }
 
+.stories-sm{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+
 .stories-p {
     color: var(--white);
     font-weight: 500;
-    font-size: 26px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 29px;
     max-width: 35vw;
 }
 
-.stories-p::before {
+.stories-sm::before {
     font-family: FontAwesome;
     content: '\f10d';
     display: flex;
     justify-content: flex-start;
     font-size: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .stories-p::after {
@@ -249,8 +301,10 @@ span .stories-link{
 }
 
 .video{
-    margin: 0 auto;
-    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info{
@@ -318,8 +372,17 @@ span .stories-link{
 
 .landing-banner-subtech {
     width: 100%;
-    height: 88vh;
-    background: url(/image/tech/Rectangle\ 12-3.svg);
+    height: fit-content;
+    background: url(/image/home/Rectangle\ 12-3.svg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+.landing-banner-subcontent {
+    width: 100%;
+    height: fit-content;
+    background: url(/image/home/Rectangle\ 12-3.svg);
     background-size: cover;
     background-position: center;
 }
@@ -328,8 +391,8 @@ span .stories-link{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 50px 20px 30px;
-    background-color: var(--web-navy-blue);
+    padding: 20px 50px 0 30px;
+    background-color: transparent;
 }
 
 .nav-text-about h2{
@@ -347,12 +410,57 @@ span .stories-link{
     line-height: 29px;
 }
 
+.n-team-card img{
+    width: 150px;
+    padding-right: 30px;
+}
+
+.n-team-list{
+    margin-top: 50px;
+}
+
+.n-card-text{
+    padding-left: 30px;
+    color: var(--web-navy-blue);
+}
+
+.n-team-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 20vw 0 20vw;
+}
+
+.n-card-text h3 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.n-card-text p{
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .box-about{
     background-color: rgba(255, 255, 255, .9);
     border: none;
     border-radius: 15px;
     padding: 40px;
     margin: 60px auto;
+    max-width: 45vw;
+}
+
+.box-about3 {
+    background-color: rgba(255, 255, 255, .9);
+    border: none;
+    border-radius: 15px;
+    padding: 40px;
+    padding-right: 100px;
+    margin: 30px;
     max-width: 45vw;
 }
 
@@ -363,6 +471,16 @@ span .stories-link{
     padding: 40px;
     margin-right: 0px;
     margin-bottom: 50px;
+}
+
+.box-about4 {
+    background-color: rgba(255, 255, 255, .9);
+    border: none;
+    border-radius: 40px;
+    padding: 70px;
+    padding-right: 100px;
+    margin: 0 20vw 50px 0;
+    max-width: 700px;
 }
 
 .box-about h2 {
@@ -378,10 +496,23 @@ span .stories-link{
     color: var(--web-navy-blue);
 }
 
+.nav-abt-img{
+    margin-right: -100px;
+}
+
+.about-link{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--web-navy-blue);
+}
+
 .nav-info-about {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .nav-info {
@@ -471,7 +602,7 @@ span .stories-link{
     color: var(--web-navy-blue);
 }
 
-.team p{
+.team-fr-text{
     text-align: center;
     font-weight: 400;
     font-size: 24px;
@@ -569,7 +700,7 @@ span .stories-link{
 
 .tech2u-impact{
     align-items: center;
-    padding: 70px 10vw 0px 10vw;
+    padding: 0 10vw 0px 10vw;
 }
 
 .tech2u-impact h2{
@@ -796,14 +927,33 @@ span .stories-link{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.nav-info-cont-cap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .box-mobile {
-    background-color: rgba(255, 255, 255, .9);
-    border: none;
-    border-radius: 15px;
-    padding: 20px;
-    color: var(--web-navy-blue);
+    display: flex;
+}
+
+.box-mobile h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--off-white);
+    margin-right: 30vw;
+}
+
+.box-mobile img {
+    position: absolute;
+    right: 8vw;
+    bottom: 260px;
 }
 
 .mobile-body{
@@ -838,10 +988,10 @@ span .stories-link{
     color: var(--web-navy-blue);
 }
 
-.vid{
+.feature-vid{
     display: flex;
-    justify-content: center;
-    background: url(/image/tech/Group\ 306.svg);
+    background-color: var(--light-grey);
+    padding: 50px 0;
 }
 
 .vid img{
@@ -850,17 +1000,16 @@ span .stories-link{
 }
 
 .feature{
-    background-color: var(--web-navy-blue);
     padding: 50px 200px;
 }
 
 .feature h2{
     margin-bottom: 20px;
-    color: var(--off-white);
+    color: var(--web-navy-blue);
 }
 
 .feature ul{
-    color: var(--off-white);
+    color: var(--web-navy-blue);
     margin-left: 40px;
 }
 
@@ -917,6 +1066,18 @@ span .stories-link{
     position: absolute;
     top: -100px;
     left: -80px;
+}
+
+.stories-header-bx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stories-header-bx img{
+    margin-bottom: -50px;
+    z-index: 2;
 }
 
 .content{
@@ -1021,16 +1182,16 @@ span .stories-link{
 
 .help-info h2{
     font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 24px;
+    line-height: 29px;
     color: var(--web-navy-blue);
     margin-bottom: 40px;
 }
 
 .help-info p {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 22px;
     color: var(--web-navy-blue);
 }
 
@@ -1047,16 +1208,25 @@ span .stories-link{
     color: var(--web-navy-blue);
 }
 
+.box-help p{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
 .nav-help{
     display: flex;
     margin: 70px;
 }
 
-
 /* Contact */
 .landing-banner-contact {
     width: 100%;
-    background: none;
+    height: 88vh;
+    background: url(/image/home/Rectangle\ 12-3.svg);
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-body{
@@ -1073,7 +1243,7 @@ span .stories-link{
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
-    color: var(--web-navy-blue);
+    color: var(--white);
     margin-bottom: 30px;
 }
 
@@ -1085,7 +1255,7 @@ span .stories-link{
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: var(--web-navy-blue);
+    color: var(--white);
     margin-bottom: 20px;
 }
 
@@ -1101,8 +1271,8 @@ span .stories-link{
 }
 
 .contact-list button{
-    background-color: var(--web-navy-blue);
-    color: var(--off-white);
+    color: var(--web-navy-blue);
+    background-color: var(--off-white);
 }
 
 .question{
@@ -1200,6 +1370,53 @@ span .stories-link{
     display: none;
 }
 
+.quest-sec {
+    padding: 70px;
+}
+
+.quest-sec h3 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--web-navy-blue);
+}
+
+.login-quest {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.quest-box {
+    background-color: var(--lighter-grey);
+    padding: 60px;
+    margin: 0 30px;
+    width: 40vw;
+    border-radius: 40px;
+}
+
+.quest-box p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--web-navy-blue);
+    padding-bottom: 20px;
+}
+
+.quest-box ul li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--web-navy-blue);
+}
+
+.quest-img {
+    position: absolute;
+    right: .5vw;
+    bottom: -270px;
+}
 
 /* ------------ Flip card ------------- */
 
