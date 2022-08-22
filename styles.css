@@ -61,7 +61,6 @@
 .logo {
   width: 150px;
   cursor: pointer;
-  margin-right: auto;
 }
 
 .site_links {
@@ -120,7 +119,7 @@ button {
 }
 
 .cta {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 button:hover {
@@ -176,6 +175,10 @@ button:hover {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+}
+
+.pos-banner {
+  margin-right: auto;
 }
 
 .nav-cont-cap {
@@ -390,10 +393,6 @@ span .stories-link {
   padding: 30px 50px 30px 50px;
 }
 
-.footer-logo {
-  margin-right: auto;
-}
-
 .footer-col {
   margin-right: 30px;
 }
@@ -437,14 +436,6 @@ span .stories-link {
   background: url(/src/assets/home/Rectangle\ 12.png);
   background-size: cover;
   background-position: center;
-}
-
-.nav-banner-about {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 20px 50px 0 30px;
-  background-color: transparent;
 }
 
 .nav-text-about h2 {
