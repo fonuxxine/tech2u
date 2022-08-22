@@ -15,93 +15,86 @@
 
 <body>
     <!-- Header -->
-    <div class="landing-banner-contact">
+    <div class="landing-banner">
         <div class="nav-banner-about">
-            <img class="logo" src="/image/home/image 3.svg" alt="">
+            <img class="logo" src='../assets/other/image4.svg' alt="">
             <nav>
                 <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="/tech-page/tech.html">Technology</a></li>
-                    <li><a href="/stories-page/stories.html">Stories</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../tech-page/tech.html">Technology</a></li>
+                    <li><a href="../accessibility.html">Accessibility</a></li>
+                    <li><a href="../stories-page/stories.html">Stories</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-            <a class="cta" href=""><button>Get Tech Support</button></a>
+            <a class="cta" href="../contact.html"><button>Get Tech Support</button></a>
         </div>
         <div class="contact-body">
             <div class="contact-text">
                 <h2>Contact Us</h2>
-                <div class="contact-list">
-                    <p>Are you looking to learn more about whether Tech2U is for you? Get in touch with us, we’d love to hear
-                        from you!</p>
-                    <!-- <ul>
-                            <li>Insert Instructions on how to login in</li>
-                            <li>Insert Instructions on how to login in</li>
-                            <li>Insert Instructions on how to login in</li>
-                            <li>Insert Instructions on how to login in</li>
-                            <li>Insert Instructions on how to login in</li>
-                        </ul> -->
-                    <button class="contact-btn">Login to the Instructor Portal</button>
-                </div>
             </div>
-            <img src="/image/contact/Group 307.svg" alt="">
         </div>
     </div>
 
     <!-- Body -->
-    <section  class="quest-sec">
-        <h3>As an Instructor, are you registered on the HR/ROSI platform?</h3>
+    <section class="quest-sec">
         <div class="login-quest">
-            <div class="quest-box">
-                <p>Yes - Login to instructor portal</p>
-                <ul>
-                    <li>Choose the applicable term and then click 'Go to show the instructor's current courses and their
-                        sections.'</li>
-                    <li>Click to request AV support, Under the AV Support column, press for the course section where tech
-                        support is needed.</li>
-                    <li>Answer the questions presented in the AV Support pop-up form and click "submit"</li>
-                </ul>
+            <a href="#book">
+                <div class="quest-box">
+                    <img class="quest-img" src="../assets/contact/Group477.svg" alt="" />
+                    <h3>I am ready to book Tech Support</h3>
+                </div>
+            </a>
+            <a href="#form">
+                <div class="quest-box">
+                    <img class="quest-img" src="../assets/contact/Group493.svg" alt="" />
+                    <h3>I have more questions</h3>
+                </div>
+            </a>
+        </div>
+        <h2 id="book">I am ready to book Tech Support</h2>
+        <div class="contact-part">
+            <div class="part">
+                <img class="quest-img" src="../assets/contact/Group486.svg" alt="" />
+                <p>1. Login to the LSM Portal</p>
             </div>
-            <img class="quest-img" src="/image/stories/enrolment_services-01 2.svg" alt="">
-            <div class="quest-box">
-                <p>No - Send an email request to lsm.tech2U@utoronto.ca with the following details:</p>
-                <ul>
-                    <li>Which courses and course sections to request classroom tech equipment
-                    </li>
-                    <li>What classroom tech equipment would they like for the course(s). Learn more about each classroom tech
-                        equipment here:
-                        Technology</li>
-                </ul>
+            <div class="part">
+                <img class="quest-img" src="../assets/contact/Group487.svg" alt="" />
+                <p>2. Visit My Classrooms</p>
+            </div>
+            <div class="part">
+                <img class="quest-img" src="../assets/contact/Group363-3.svg" alt="" />
+                <p>3. Learn more about each classroom and request support</p>
             </div>
         </div>
-    </section>
-    <div class="question">
-        <p class="question-title">Questions about Tech2U, connect with Tech2U and we are happy to help you!</p>
-        <p class="question-contact"><b>Email Us</b></p>
-        <a href="#contact_footer">
-            <img id="arrow" src="/image/contact/Vector-2.svg" alt="">
+        <a href="https://lsm.utoronto.ca/lsm_portal">
+            <div class="centre-btn">
+                <button class="contact-btn">Login to the Instructor Portal</button>
+            </div>
         </a>
-    </div>
-    <div id="tap" data-aos="fade-up" id="form">
+    </section>
+
+    <h2 class="form-quest">I have more questions.</h2>
+    <div id="form">
         <form class="contact-form" action="">
             <div class="contact-name">
                 <div class="field first-name">
                     <p>First Name</p>
-                    <input type="text">
+                    <input type="text" />
                 </div>
                 <div class="field">
                     <p>Last Name</p>
-                    <input type="text">
+                    <input type="text" />
                 </div>
             </div>
             <div class="field">
                 <p>Email Address</p>
-                <input type="text">
+                <input type="text" />
             </div>
             <div class="field">
                 <p>Phone Number</p>
-                <input type="text">
+                <input type="text" />
             </div>
             <div class="field message">
                 <p>Message</p>
@@ -114,37 +107,33 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer" id="contact_footer">
-        <img class="footer-logo" src="/image/home/image 3.svg" alt="">
+    <div class="footer">
+        <img class="footer-logo" src='../assets/other/image4.svg' alt="">
         <div class="footer-col">
-            <h3 class="footer-h3">Home</h3>
-            <h3 class="footer-h3">About</h3>
-            <h3 class="footer-h3">Technology</h3>
+            <a href="../index.html">
+                <h3 class="footer-h3">Home</h3>
+            </a>
+            <a href="../about.html">
+                <h3 class="footer-h3">About</h3>
+            </a>
+            <a href="/tech-page/tech.html">
+                <h3 class="footer-h3">Technology</h3>
+            </a>
         </div>
         <div class="footer-col">
-            <h3 class="footer-h3">Stories</h3>
-            <h3 class="footer-h3">Contact Us</h3>
+            <a href="../accessibility.html">
+                <h3 class="footer-h3">Accessibility</h3>
+            </a>
+            <a href="../stories-page/stories.html">
+                <h3 class="footer-h3">Stories</h3>
+            </a>
+            <a href="../contact.html">
+                <h3 class="footer-h3">Contact Us</h3>
+            </a>
         </div>
-        <button class="footer-cta">Get Tech Support</button>
+        <a href="../contact.html" target="_blank">
+            <button class="footer-cta">Get Tech Support</button>
+        </a>
     </div>
-
-    <script>
-        var arrow = document.getElementById('arrow');
-        var blankForm = document.getElementById('tap');
-        arrow.addEventListener('click', e => {
-            if (blankForm.style.display === 'none') {
-                blankForm.style.display = 'block';
-                arrow.src = '/image/contact/Vector-3.svg';
-            } else {
-                blankForm.style.display = 'none';
-                arrow.src = '/image/contact/Vector-2.svg';
-            }
-            })
-        
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>

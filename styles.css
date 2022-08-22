@@ -207,11 +207,8 @@ button:hover {
 }
 
 .nav-cont-cap img{
-  position: absolute;
   width: 230px;
   margin-left: 50px;
-  bottom: 350px;
-  right: 10vw;
 }
 
 /* Home */
@@ -1113,8 +1110,7 @@ span .stories-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 100px;
-  margin-top: -490px;
+  padding-top: 50px;
 }
 
 .nav-info-cont-cap {
@@ -1128,7 +1124,7 @@ span .stories-link {
 
 .box-mobile {
   display: flex;
-  margin-top: -100px;
+  padding-bottom: 30px;
 }
 
 .box-mobile h2 {
@@ -1143,7 +1139,7 @@ span .stories-link {
 .box-mobile img {
   position: absolute;
   right: 8vw;
-  bottom: 340px;
+  bottom: 350px;
   width: 230px;
 }
 
@@ -1353,7 +1349,6 @@ span .stories-link {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -500px;
   margin-bottom: 80px;
 }
 
@@ -1439,7 +1434,7 @@ span .stories-link {
 }
 
 .help-info {
-  padding: 80px 100px;
+  padding: 50px 100px 80px 100px;
   padding-bottom: 0;
 }
 
@@ -1493,7 +1488,6 @@ span .stories-link {
   padding-top: 0;
   display: flex;
   align-items: center;
-  margin-top: -450px;
 }
 
 .contact-text {
@@ -1707,8 +1701,8 @@ span .stories-link {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20vw;
   margin: 50px 20px;
+  width: 20vw;
 }
 
 .contact-part p {
@@ -1717,4 +1711,12 @@ span .stories-link {
   font-size: 18px;
   line-height: 22px;
   color: var(--web-navy-blue);
+}
+
+button a{
+  text-decoration: none;
+}
+
+.login-quest a{
+  text-decoration: none;
 }
