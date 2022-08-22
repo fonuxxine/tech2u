@@ -132,15 +132,20 @@ button:hover {
 }
 
 .nav-p {
-  width: 700px;
+  width: 600px;
   position: absolute;
-  right: 5vw;
+  top: 150px;
+  left: 50vw;
 }
 
 .nav-p-abt {
   width: 250px;
   position: relative;
   right: 20vw;
+}
+
+.icon-resize {
+  width: 400px;
 }
 
 .nav-p-tech {
@@ -472,9 +477,31 @@ span .stories-link {
   border-radius: 40px;
   backdrop-filter: blur(10px);
   padding: 40px;
-  padding-right: 20vw;
+  padding-right: 15vw;
   margin: 30px;
   margin-right: 10vw;
+}
+
+.box-about4 {
+  background-color: rgba(255, 255, 255, .9);
+  border: none;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  padding-right: 15vw;
+  margin: 30px;
+  margin-right: 35vw;
+}
+
+.box-about5 {
+  background-color: rgba(255, 255, 255, .9);
+  border: none;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  padding-right: 10vw;
+  margin: 30px;
+  margin-right: 40vw;
 }
 
 .box-about h2 {
@@ -713,18 +740,6 @@ span .stories-link {
   padding-right: 15vw;
   margin-right: 40vw;
   margin-bottom: 50px;
-}
-
-.box-about4 {
-  background-color: rgba(255, 255, 255, .9);
-  border: none;
-  border-radius: 40px;
-  backdrop-filter: blur(10px);
-  padding: 40px;
-  padding-right: 200px;
-  margin: 30px;
-  margin-right: 0;
-  max-width: 45vw;
 }
 
 .box-about h2 {
