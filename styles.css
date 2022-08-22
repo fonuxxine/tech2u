@@ -139,8 +139,7 @@ button:hover {
 
 .nav-p-abt {
   width: 250px;
-  position: absolute;
-  bottom: 300px;
+  position: relative;
   right: 20vw;
 }
 
@@ -475,7 +474,7 @@ span .stories-link {
   padding: 40px;
   padding-right: 20vw;
   margin: 30px;
-  margin-right: 30vw;
+  margin-right: 10vw;
 }
 
 .box-about h2 {
