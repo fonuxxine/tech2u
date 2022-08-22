@@ -75,28 +75,28 @@
 
     <h2 class="form-quest">I have more questions.</h2>
     <div id="form">
-        <form class="contact-form" action="">
+        <form class="contact-form" action="contactform.php" method="post">
             <div class="contact-name">
                 <div class="field first-name">
                     <p>First Name</p>
-                    <input type="text" />
+                    <input type="text" name="first"/>
                 </div>
                 <div class="field">
                     <p>Last Name</p>
-                    <input type="text" />
+                    <input type="text" name="last"/>
                 </div>
             </div>
             <div class="field">
                 <p>Email Address</p>
-                <input type="text" />
+                <input type="text" name="email"/>
             </div>
             <div class="field">
                 <p>Phone Number</p>
-                <input type="text" />
+                <input type="text" name="phone"/>
             </div>
             <div class="field message">
                 <p>Message</p>
-                <textarea id="subject" name="subject"></textarea>
+                <textarea id="subject" name="message"></textarea>
             </div>
             <div class="centre-btn">
                 <button class="contact-btn">Send Message</button>
@@ -130,7 +130,7 @@
             </a>
         </div>
         <a href="contacttech.html" target="_blank">
-            <button class="footer-cta">Get Tech Support</button>
+            <button class="footer-cta" type="submit" name="submit">Get Tech Support</button>
         </a>
     </div>
 </body>
