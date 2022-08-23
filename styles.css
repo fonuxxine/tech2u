@@ -132,7 +132,7 @@ button:hover {
 }
 
 .nav-p {
-  width: 30vw;
+  width: max-content;
   margin-left: -10vw;
 }
 
