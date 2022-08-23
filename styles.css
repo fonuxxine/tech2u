@@ -132,10 +132,12 @@ button:hover {
 }
 
 .nav-p {
-  width: 600px;
-  position: absolute;
-  top: 150px;
-  left: 50vw;
+  width: 30vw;
+  margin-left: -10vw;
+}
+
+.resize {
+  width: 40vw;
 }
 
 .nav-p-abt {
@@ -488,9 +490,8 @@ span .stories-link {
   border-radius: 40px;
   backdrop-filter: blur(10px);
   padding: 40px;
-  padding-right: 15vw;
+  padding-right: 10vw;
   margin: 30px;
-  margin-right: 35vw;
 }
 
 .box-about5 {
@@ -537,7 +538,7 @@ span .stories-link {
 .nav-info {
   display: flex;
   align-items: flex-start;
-  padding: 30px 0vw 30px 5vw;
+  padding: 30px 10vw 30px 5vw;
 }
 
 .services {
