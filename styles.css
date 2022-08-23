@@ -1142,7 +1142,7 @@ span .stories-link {
   font-size: 32px;
   line-height: 39px;
   color: var(--off-white);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   margin-right: 30vw;
 }
 
@@ -1234,7 +1234,7 @@ span .stories-link {
 .feature-vid2 {
   display: flex;
   background-color: var(--light-grey);
-  padding: 0px 0;
+  padding: 10px 0 10px 0;
   width: 100%;
 }
 
@@ -1245,6 +1245,8 @@ span .stories-link {
 
 .feature2 {
   padding: 50px 200px;
+  padding-right: 20px;
+  width: 50vw
 }
 
 .feature2 h2 {
