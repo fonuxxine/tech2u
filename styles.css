@@ -1452,6 +1452,10 @@ span .stories-link {
   padding-bottom: 30px;
 }
 
+.remove-space {
+  margin-bottom: 20px;
+}
+
 .help-info h2 {
   font-weight: 600;
   font-size: 24px;
