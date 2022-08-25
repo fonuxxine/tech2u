@@ -1766,7 +1766,7 @@ span .stories-link {
   font-size: 24px;
   line-height: 49px;
   color: var(--web-navy-blue);
-  margin: 0px 0 50px 0;
+  margin: 0px 0 20px 0;
 }
 
 .contact-part {
@@ -1798,4 +1798,13 @@ button a{
 
 .login-quest a{
   text-decoration: none;
+}
+
+.form-p {
+  color: var(--web-navy-blue);
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 50px;
 }
